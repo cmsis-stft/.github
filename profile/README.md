@@ -6,10 +6,10 @@ A streaming Short-Time Fourier Transform (STFT) library for Arm Cortex-M microco
 
 | Folder | Description |
 |---|---|
-|`[cmsis_stft/](https://github.com/cmsis-stft/cmsis_stft/tree/main) | The library (`inc/` headers, `src/` source) |
-| `cmsis-stft-examples/` | STM32F407 example firmware (STM32CubeIDE projects) |
-| `pc_datalogger/` | PC application that receives, plots and logs the STFT output over USB |
-| `cmsis-stft_matlab/` | Test-signal generator and verification script (reference: MATLAB `spectrogram`) |
+|[cmsis_stft](https://github.com/cmsis-stft/cmsis_stft/tree/main) | The library (`inc/` headers, `src/` source) |
+| [cmsis-stft-examples](https://github.com/cmsis-stft/cmsis-stft_examples) | STM32F407 example firmware (STM32CubeIDE projects) |
+| [pc_datalogger](https://github.com/cmsis-stft/pc_datalogger) | PC application that receives, plots and logs the STFT output over USB |
+| [cmsis-stft_matlab](https://github.com/cmsis-stft/cmsis-stft_matlab) | Test-signal generator and verification script (reference: MATLAB `spectrogram`) |
 
 ## Requirements
 - CMSIS-DSP 5.9.0 (not included)
@@ -18,10 +18,10 @@ A streaming Short-Time Fourier Transform (STFT) library for Arm Cortex-M microco
 - MATLAB with the Signal Processing Toolbox, for verification
 
 ## Workflow
-1. Generate the test signals with `cmsis-stft_matlab/Test_Signal_Generator.m`.
-2. Build and flash an example from `cmsis-stft_examples/`.
-3. Capture the output with `pc_datalogger/`. This saves an `.xlsx` file.
-4. Compare it against MATLAB with `cmsis-stft_matlab/MATLAB_STFT_Verify.m`.
+1. Generate the test signals with [cmsis-stft_matlab/Test_Signal_Generator.m](https://github.com/cmsis-stft/cmsis-stft_matlab/tree/main/Test_Signal_Generator.m).
+2. Build and flash an example from [cmsis-stft_examples](https://github.com/cmsis-stft/cmsis-stft_examples).
+3. Capture the output with [pc_datalogger](https://github.com/cmsis-stft/pc_datalogger). This saves an `.xlsx` file.
+4. Compare it against MATLAB with [cmsis-stft_matlab/MATLAB_STFT_Verify.m](https://github.com/cmsis-stft/cmsis-stft_matlab/tree/main/MATLAB_STFT_Verify.m).
 
 Each folder has its own README.
 
