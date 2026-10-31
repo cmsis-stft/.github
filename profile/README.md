@@ -6,10 +6,10 @@ A streaming Short-Time Fourier Transform (STFT) library for Arm Cortex-M microco
 
 | Folder | Description |
 |---|---|
-| `cmsis_stft_library/` | The library (`inc/` headers, `src/` source) |
-| `examples/` | STM32F407 example firmware (STM32CubeIDE projects) |
+| `cmsis_stft/` | The library (`inc/` headers, `src/` source) |
+| `cmsis-stft-examples/` | STM32F407 example firmware (STM32CubeIDE projects) |
 | `pc_datalogger/` | PC application that receives, plots and logs the STFT output over USB |
-| `matlab/` | Test-signal generator and verification script (reference: MATLAB `spectrogram`) |
+| `cmsis-stft_matlab/` | Test-signal generator and verification script (reference: MATLAB `spectrogram`) |
 
 ## Requirements
 - CMSIS-DSP 5.9.0 (not included)
